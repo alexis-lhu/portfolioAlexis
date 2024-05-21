@@ -1,48 +1,114 @@
-body{
+/* Styles généraux */
+body {
     background-color: #1E385C;
-    color : #FFFFFF;
-    margin : 0 7px 0 7px;
+    color: #FFFFFF;
+    margin: 0 7px;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header, footer {
     padding: 5%;
     font-size: 20px;
     display: flex;
-    height : 25px;
+    justify-content: center;
+    align-items: center;
 }
 
-footer{
-    padding: 5%;
+footer {
     background-color: #1E385C;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    height : 10%;
+    color: #FFF;
+    height: 10%;
 }
 
-header ul{
+header ul {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    width : 80%;
-    list-style-type: none;
+    width: 80%;
+    list-style-type: none; /* Ajouté pour enlever les points */
     align-items: center;
-    padding : 0;
+    padding: 0;
 }
 
 li a {
     text-decoration: none;
-    color : rgb(255, 255, 255);
+    color: #FFF;
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
 }
 
-li a:hover{
-    color : rgb(249, 249, 20);
+li a:hover {
+    color: rgb(249, 249, 20);
 }
 
-#contactHeader{
-    color : rgb(249, 249, 20);
+#indexHeader {
+    color: rgb(249, 249, 20);
+}
+
+/* Veille Technologique */
+#veille-technologique {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Styles des sections */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+section p, section ul {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E385C;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFD700;
+    border: 3px solid #FFF;
 }
